@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using TMPro;
@@ -6,37 +7,56 @@ using UnityEngine;
 
 public class GameManager : StaticInstance<GameManager>
 {
+    [SerializeField] private Transform StageHolder;
+
+    [SerializeField] private List<StageObject> StagesIntro;
+    [SerializeField] private List<StageObject> StagesScenario1;
+
+    private Scene level;
+    private int stagesTotal;
+    private int stagesCounter;
+
+    private List<StageObject> CurrentScenario;
+
     private void Start()
     {
-        Level level = new Level();
-        level.Stages = new List<Stage>();
+        GameSystem.Instance.Level = 1;
 
-        Stage introStage = new StageIntro();
-        var intro1 = new StepDialogue(); //dialog
-        intro1.PersonLeft = "DialoguePlayer";
-        intro1.PersonRight = "DialogueHR";
-        intro1.Messages = new List<DialogueText>()
+        switch(GameSystem.Instance.Level)
         {
-            new DialogueText(DialogueDirection.Right, "Dobro došli!\nImali smo nekoliko manjih incidenata, pa smo zamolili za dodatnu inspekciju.\nMolim Vas da obratite pažnju na to da li su sva pravila ispostovana."),
-            new DialogueText(DialogueDirection.Left, "Vazi, istrazicu!"),
-            new DialogueText(DialogueDirection.Right, "Prvo mozete proci kroz pravilnik za sigurnosnu opremu, izvolite!"),
-        };
+            case 0:
+            {
+                CurrentScenario = StagesIntro;
+                break;
+            }
+            case 1:
+            {
+                CurrentScenario = StagesScenario1;
+                break;
+            }
+        }
 
-        var intro2 = new StepShowNotes();
-        intro2.Image = "NotesObaveze";
+        stagesCounter = 0;
+        stagesTotal = CurrentScenario.Count;
+        SpawnNewStage();
+    }
 
-        var intro3 = new StepDialogue(); //dialog
-        intro3.PersonLeft = "DialoguePlayer";
-        intro3.PersonRight = "DialogueHR";
-        intro3.Messages = new List<DialogueText>()
+    private void SpawnNewStage()
+    {
+        Instantiate(CurrentScenario[stagesCounter], StageHolder);
+        stagesCounter++;
+    }
+
+    public void NotifyFinishedStage()
+    {
+        if (stagesCounter >= stagesTotal)
         {
-            new DialogueText(DialogueDirection.Right, "Pokazacu Vam sigurnosne kamere radnog mesta od pre par sati.\nMolim Vas obelezite sve nepravilnosti.")
-        };
-
-        introStage.Steps.Add(intro1);
-        introStage.Steps.Add(intro2);
-        introStage.Steps.Add(intro3);
-
-        level.Stages.Add(introStage);
+            //passed level!
+            Debug.LogError("All stages passed for level: " + level);
+        }
+        else
+        {
+            SpawnNewStage();
+        }
     }
 }

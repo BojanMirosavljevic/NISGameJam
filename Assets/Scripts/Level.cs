@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 public class Level
@@ -40,16 +41,20 @@ public class StepDialogue : Step
     }
 }
 
+[Serializable]
 public class DialogueText
 {
     public DialogueDirection Direction;
     public string Text;
 
-    public DialogueText(DialogueDirection direction, string text)
-    {
-        Direction = direction;
-        Text = text;
-    }
+    public int Height = 50;
+    public int Width = 475;
+
+    // public DialogueText(DialogueDirection direction, string text)
+    // {
+    //     Direction = direction;
+    //     Text = text;
+    // }
 }
 
 public enum DialogueDirection

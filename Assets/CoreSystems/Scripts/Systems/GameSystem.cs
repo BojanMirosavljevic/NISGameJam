@@ -1,12 +1,10 @@
 public class GameSystem : PersistentSingleton<GameSystem>
 {
-    protected override void Awake()
-    {
-        base.Awake();
-    }
+    public int Level;
 
-    protected override void OnInitialize()
+    public void LoadLevel(int level)
     {
-        base.OnInitialize();
+        Level = level;
+        SceneSystem.Instance.LoadScene(Scene.Game);
     }
 }
