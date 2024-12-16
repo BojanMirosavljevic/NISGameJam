@@ -627,6 +627,7 @@ MonoBehaviour:
   StagesScenario1:
   - {fileID: 3480908583778263009, guid: ea862ada9b6ac49efacfbf23a9a22744, type: 3}
   - {fileID: 6490478292018381899, guid: f3d8eab43b66b4e808ad1223c0ae3f54, type: 3}
+  - {fileID: 3480908583778263009, guid: c2835d582326b4457a045426dbe5d570, type: 3}
 --- !u!1 &1148001898
 GameObject:
   m_ObjectHideFlags: 0
