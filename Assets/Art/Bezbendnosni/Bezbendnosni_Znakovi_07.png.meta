@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bezbendnosni_Znakovi_07_0: 5923649197730711622
+      Bezbendnosni_Znakovi_07_1: 649776522965662763
+      Bezbendnosni_Znakovi_07_2: -639372429441333584
+      Bezbendnosni_Znakovi_07_3: -9204374766631610957
+      Bezbendnosni_Znakovi_07_4: 7805561908834992295
+      Bezbendnosni_Znakovi_07_5: -1800829010099661317
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

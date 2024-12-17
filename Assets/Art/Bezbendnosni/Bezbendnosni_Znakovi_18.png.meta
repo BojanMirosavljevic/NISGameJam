@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bezbendnosni_Znakovi_18_0: -6320295474648371419
+      Bezbendnosni_Znakovi_18_1: 5191740961138758788
+      Bezbendnosni_Znakovi_18_2: 136845873257441310
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
