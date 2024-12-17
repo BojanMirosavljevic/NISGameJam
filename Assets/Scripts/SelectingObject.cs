@@ -35,7 +35,6 @@ public class SelectingObject : StageObject
 
         Clickables[0].onClick.AddListener(() => {
             QuizObject qo = Instantiate(QuizQuestions[0], QuizHolder);
-            qo.Parent = this;
             qo.onClose = CheckEndStage;
             if(qo.Mandatory)
             {
@@ -48,7 +47,6 @@ public class SelectingObject : StageObject
 
         Clickables[1].onClick.AddListener(() => {
             QuizObject qo = Instantiate(QuizQuestions[1], QuizHolder);
-            qo.Parent = this;
             qo.onClose = CheckEndStage;
             if(qo.Mandatory)
             {
@@ -61,7 +59,6 @@ public class SelectingObject : StageObject
 
         Clickables[2].onClick.AddListener(() => {
             QuizObject qo = Instantiate(QuizQuestions[2], QuizHolder);
-            qo.Parent = this;
             qo.onClose = CheckEndStage;
             if(qo.Mandatory)
             {
@@ -114,7 +111,6 @@ public class SelectingObject : StageObject
                 }
 
                 QuizObject qo = Instantiate(QuizQuestions[i], QuizHolder);
-                qo.Parent = this;
                 if(qo.Mandatory)
                 {
                     SelectableMandatoryCounter++;

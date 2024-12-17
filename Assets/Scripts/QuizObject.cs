@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class QuizObject : MonoBehaviour
 {
-    public SelectingObject Parent;
-
     public QuizCorrectSelection CorrectSelection;
     public bool Mandatory;
 
