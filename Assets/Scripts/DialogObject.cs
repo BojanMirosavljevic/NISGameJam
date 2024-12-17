@@ -1,9 +1,11 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogObject : StageObject
 {
+    public int WaitForNext = 5;
 
     [Header("References")]
     public Sprite DialogPersonSprite;
@@ -12,7 +14,6 @@ public class DialogObject : StageObject
     [Header("References")]
     [SerializeField] private Image DialogPerson;
     [SerializeField] private Transform MessagesRoot;
-    [SerializeField] private Button ButtonLoadMore;
     [SerializeField] private Button ButtonNextStage;
 
 
@@ -20,41 +21,43 @@ public class DialogObject : StageObject
     [SerializeField] private MessageObject MessageLeft;
     [SerializeField] private MessageObject MessageRight;
 
-    private int messageCount;
-
     public void Start()
     {
+        ButtonNextStage.interactable = false;
+        
         DialogPerson.sprite = DialogPersonSprite;
 
-        TryLoadMessage();
+        LoadMessages();
 
-        ButtonLoadMore.onClick.AddListener(TryLoadMessage);
         ButtonNextStage.onClick.AddListener(ExitDialogue);
     }
 
-    private void TryLoadMessage()
+    private void LoadMessages()
     {
-        if (messageCount < Messages.Count)
+        foreach(var Message in Messages)
         {
-            //instantiate message
-            if (Messages[messageCount].Direction == DialogueDirection.Left)
+            if (Message.Direction == DialogueDirection.Left)
             {
                 MessageObject mo = Instantiate(MessageLeft, MessagesRoot);
-                mo.Init(Messages[messageCount]);
+                mo.Init(Message);
             }
-            else if (Messages[messageCount].Direction == DialogueDirection.Right)
+            else if (Message.Direction == DialogueDirection.Right)
             {
                 MessageObject mo = Instantiate(MessageRight, MessagesRoot);
-                mo.Init(Messages[messageCount]);
+                mo.Init(Message);
             }
-
-            messageCount++;
         }
-        
-        bool moreIncomingMessages = messageCount < Messages.Count;
-        ButtonLoadMore.gameObject.SetActive(moreIncomingMessages);
-        ButtonNextStage.gameObject.SetActive(!moreIncomingMessages);
+
+        StartCoroutine(EnableNextSoon());
     }
+
+    private IEnumerator EnableNextSoon()
+    {
+        yield return new WaitForSecondsRealtime(WaitForNext);
+
+        ButtonNextStage.interactable = true;
+    }
+
 
     private void ExitDialogue()
     {

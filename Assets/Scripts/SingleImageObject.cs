@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class SingleImageObject : StageObject
 {
+    public int WaitForNext = 5;
     [SerializeField] private Button ButtonNextStage;
 
 
@@ -19,7 +20,7 @@ public class SingleImageObject : StageObject
 
     private IEnumerator EnableNextSoon()
     {
-        yield return new WaitForSecondsRealtime(5);
+        yield return new WaitForSecondsRealtime(WaitForNext);
 
         ButtonNextStage.interactable = true;
     }
