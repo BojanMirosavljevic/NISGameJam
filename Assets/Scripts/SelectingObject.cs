@@ -87,7 +87,14 @@ public class SelectingObject : StageObject
     {
         if (SelectableMandatoryCounter >= MandatoryTotal)
         {
-            ButtonNext.gameObject.SetActive(true);
+            if (FinishedClickables.Count >= SelectableTotal)
+            {
+                EndStage();
+            }
+            else
+            {
+                ButtonNext.gameObject.SetActive(true);
+            }
         }
     }
 
