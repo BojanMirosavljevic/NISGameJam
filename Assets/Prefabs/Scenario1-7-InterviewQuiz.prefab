@@ -109,8 +109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -259, y: -4}
-  m_SizeDelta: {x: 571.4277, y: 515.2849}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 300, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1994700461874901255
 CanvasRenderer:
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6199373623139327904, guid: bcaeaa6f3094f4f4f877a29c535a3f10, type: 3}
+  m_Sprite: {fileID: 4068152672195456352, guid: 73592aa2b4bf94eeaa3d60b0844ef758, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 108395082149736498}
   - component: {fileID: 2857403587940779203}
   m_Layer: 5
-  m_Name: Scenario1-5-InterviewQuiz
+  m_Name: Scenario1-7-InterviewQuiz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -246,26 +246,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaitForNext: 4
-  DialogPersonSprite: {fileID: -4555604085340471688, guid: adf7b2d8c6dce467b8970f280742f5d4, type: 3}
+  DialogPersonSprite: {fileID: -3644313833102300468, guid: cc72934c810794164a23967ffbf4da70, type: 3}
   Messages:
   - Direction: 2
     Text: "Dobar dan, video sam da ste radili sa bu\u0161ilicom.\\n\\nMo\u017Eete
-      li mi re\u0107i za\u0161to niste nosili kacigu?"
-    Height: 150
+      li mi re\u0107i \u0161ta imate od potrebne za\u0161titne opreme na sebi?"
+    Height: 175
     Width: 475
   - Direction: 1
-    Text: "Zaboravio sam da uzmem kacigu jutros.\\n\\nMislio sam da \u0107e biti
-      u redu za ovaj kratki zadatak..."
-    Height: 150
+    Text: "Ha, samo neku ode\u0107u u kojoj sam spavao..."
+    Height: 125
     Width: 475
   - Direction: 2
-    Text: "Razumem, ali pravila su jasna.\\n\\nPovreda na radu se dogodila zato \u0161to:"
-    Height: 125
-    Width: 400
+    Text: "A \u0161ta je trebalo da imate obu\u010Deno od za\u0161titne opreme na
+      radnom mestu?"
+    Height: 150
+    Width: 475
   ButtonNext: {fileID: 1510998656228894606}
   DialogPerson: {fileID: 9164600813886333396}
   MessagesRoot: {fileID: 6776012308037246111}
-  QuizQuestion: {fileID: 604910478046906095, guid: af25ebaae5846429f807d54ca45f1b8e, type: 3}
+  QuizQuestion: {fileID: 604910478046906095, guid: 2052af8f831954170bac84b2b43a10a4, type: 3}
   QuizHolder: {fileID: 3045356338237155934}
   MessageLeft: {fileID: 1693306511680560424, guid: eb6968a8f21e54fa98f9098777425d5d, type: 3}
   MessageRight: {fileID: -8586592463329141313, guid: 2f3f9bf77db18447dadc211210c0078b, type: 3}
@@ -988,15 +988,15 @@ RectTransform:
   m_GameObject: {fileID: 6332248163129810317}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3159545869697032507}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 95, y: -11}
-  m_SizeDelta: {x: 716.9016, y: 1254.2485}
+  m_AnchoredPosition: {x: 646, y: -66}
+  m_SizeDelta: {x: 546.4081, y: 731}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &323243880922666287
 CanvasRenderer:
@@ -1026,7 +1026,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4555604085340471688, guid: adf7b2d8c6dce467b8970f280742f5d4, type: 3}
+  m_Sprite: {fileID: -3644313833102300468, guid: cc72934c810794164a23967ffbf4da70, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

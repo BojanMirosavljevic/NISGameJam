@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 00468acdbe1d24fbca3c4b7c71dd5182
+guid: 73592aa2b4bf94eeaa3d60b0844ef758
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 243331394101709436
-    second: Worker_1_No_Helmet_0
+      213: 4068152672195456352
+    second: ambulance-background_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -76,8 +76,8 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
-    compressionQuality: 100
-    crunchedCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Worker_1_No_Helmet_0
+      name: ambulance-background_0
       rect:
         serializedVersion: 2
-        x: 898
-        y: 383
-        width: 132
-        height: 313
+        x: 0
+        y: 0
+        width: 2000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c7a022c1d9c706300800000000000000
-      internalID: 243331394101709436
+      spriteID: 06d24462d4bf47830800000000000000
+      internalID: 4068152672195456352
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Worker_1_No_Helmet_0: 243331394101709436
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

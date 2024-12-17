@@ -421,7 +421,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Kliknite na ta\u010Dan odgovor,\nzatim potvrdite na \"OK\" dugme."
+  m_text: "Kliknite na ta\u010Dan odgovor,\nzatim potvrdite na \"OK\" dugme.\nMogu\u0107e
+    je da ima vi\u0161e ta\u010Dnih odgovora."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -448,7 +449,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.6
+  m_fontSize: 23.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -550,14 +551,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39607844}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6717120007320773132, guid: dc92543a93e604271a1af879d0c5dbee, type: 3}
+  m_Sprite: {fileID: 7370732786960957560, guid: 2843f5b5bc8a74508a2b2911707d098f, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -844,7 +845,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Neta\u010Dan odgovor!\n\nRadniku je potrebna kaciga!"
+  m_text: "Neta\u010Dan odgovor!\n\nRadnik je u uvek u obavezi da nosi i za\u0161titnu
+    obu\u0107u i za\u0161titno odelo, a na osnovu propisa i znakova na lokaciji i
+    ostalu za\u0161titnu opremu."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -980,7 +983,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Niste ispo\u0161tovali znak"
+  m_text: "Za\u0161titnu obu\u0107u"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1191,7 +1194,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6717120007320773132, guid: dc92543a93e604271a1af879d0c5dbee, type: 3}
+  m_Sprite: {fileID: -6893319471753574353, guid: 8748a81de4f0f47acb99a020347f3e7d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1537,7 +1540,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nije postojao znak
+  m_text: "Za\u0161titno odelo"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1703,10 +1706,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2618991a4dbd4d61a54523e2dae16a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 0}
-  CorrectSelection: 1
+  CorrectSelection: 3
   Mandatory: 1
-  NoMultipleChoice: 1
+  NoMultipleChoice: 0
   Button1: {fileID: 2647745084286697097}
   Button2: {fileID: 4731015550296067610}
   QuizButton1: {fileID: 1241861799094106226}
@@ -1856,7 +1858,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ta\u010Dan odgovor!"
+  m_text: "Ta\u010Dan odgovor!\n\nRadnik je u uvek u obavezi da nosi i za\u0161titnu
+    obu\u0107u i za\u0161titno odelo, a na osnovu propisa i znakova na lokaciji i
+    ostalu za\u0161titnu opremu."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

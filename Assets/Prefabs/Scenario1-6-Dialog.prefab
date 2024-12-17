@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26b345cb9c7264de2a24b5ba35ff4bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitForNext: 5
+  WaitForNext: 3
   DialogPersonSprite: {fileID: -4555604085340471688, guid: adf7b2d8c6dce467b8970f280742f5d4, type: 3}
   Messages:
   - Direction: 2
@@ -255,7 +255,7 @@ MonoBehaviour:
   - Direction: 1
     Text: "Znam, bicu pa\u017Eljiviji slede\u0107i put."
     Height: 125
-    Width: 225
+    Width: 325
   DialogPerson: {fileID: 7451004401671246247}
   MessagesRoot: {fileID: 6776012308037246111}
   ButtonNextStage: {fileID: 1893417758186454168}

@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 1994700461874901255}
   - component: {fileID: 279475706860521021}
   m_Layer: 5
-  m_Name: HospitalBg
+  m_Name: WorkBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,15 +102,15 @@ RectTransform:
   m_GameObject: {fileID: 2109996355252290831}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: -1.2917, y: 1.2917, z: 1.2917}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3159545869697032507}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -259, y: -4}
-  m_SizeDelta: {x: 571.4277, y: 515.2849}
+  m_AnchoredPosition: {x: -589.395, y: 635.1316}
+  m_SizeDelta: {x: 761.1936, y: 934.7471}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1994700461874901255
 CanvasRenderer:
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6199373623139327904, guid: bcaeaa6f3094f4f4f877a29c535a3f10, type: 3}
+  m_Sprite: {fileID: -6256979127928577423, guid: e90050e574b3d41c798a80509240b2d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 108395082149736498}
   - component: {fileID: 2857403587940779203}
   m_Layer: 5
-  m_Name: Scenario1-5-InterviewQuiz
+  m_Name: Scenario1-9-InterviewQuiz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,6 +181,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2978173296331488884}
   - {fileID: 602498876771816398}
   - {fileID: 1276367292864613870}
   - {fileID: 6776012308037246111}
@@ -245,27 +246,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2d3f5ec7320b4ee0a9c356a43de8914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitForNext: 4
-  DialogPersonSprite: {fileID: -4555604085340471688, guid: adf7b2d8c6dce467b8970f280742f5d4, type: 3}
+  WaitForNext: 2
+  DialogPersonSprite: {fileID: 7917714088541570325, guid: bff9fc408a2624c2782e56355abdb805, type: 3}
   Messages:
   - Direction: 2
-    Text: "Dobar dan, video sam da ste radili sa bu\u0161ilicom.\\n\\nMo\u017Eete
-      li mi re\u0107i za\u0161to niste nosili kacigu?"
-    Height: 150
+    Text: "Vidim da ste skinuli nao\u010Dare dok ste pored ma\u0161ine. Za\u0161to?"
+    Height: 175
     Width: 475
-  - Direction: 1
-    Text: "Zaboravio sam da uzmem kacigu jutros.\\n\\nMislio sam da \u0107e biti
-      u redu za ovaj kratki zadatak..."
-    Height: 150
-    Width: 475
-  - Direction: 2
-    Text: "Razumem, ali pravila su jasna.\\n\\nPovreda na radu se dogodila zato \u0161to:"
-    Height: 125
-    Width: 400
   ButtonNext: {fileID: 1510998656228894606}
   DialogPerson: {fileID: 9164600813886333396}
   MessagesRoot: {fileID: 6776012308037246111}
-  QuizQuestion: {fileID: 604910478046906095, guid: af25ebaae5846429f807d54ca45f1b8e, type: 3}
+  QuizQuestion: {fileID: 604910478046906095, guid: 9e63b2102fdab46b3931e252a8843255, type: 3}
   QuizHolder: {fileID: 3045356338237155934}
   MessageLeft: {fileID: 1693306511680560424, guid: eb6968a8f21e54fa98f9098777425d5d, type: 3}
   MessageRight: {fileID: -8586592463329141313, guid: 2f3f9bf77db18447dadc211210c0078b, type: 3}
@@ -995,8 +986,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 95, y: -11}
-  m_SizeDelta: {x: 716.9016, y: 1254.2485}
+  m_AnchoredPosition: {x: 149, y: -198}
+  m_SizeDelta: {x: 616.7084, y: 863}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &323243880922666287
 CanvasRenderer:
@@ -1026,8 +1017,83 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4555604085340471688, guid: adf7b2d8c6dce467b8970f280742f5d4, type: 3}
+  m_Sprite: {fileID: 7917714088541570325, guid: bff9fc408a2624c2782e56355abdb805, type: 3}
   m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &6353648849088447784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2978173296331488884}
+  - component: {fileID: 4826411184823354324}
+  - component: {fileID: 4522167470568155432}
+  m_Layer: 5
+  m_Name: WorkBackground (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2978173296331488884
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6353648849088447784}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -1.2917, y: 1.2917, z: 1.2917}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3159545869697032507}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -589.395, y: 635.1316}
+  m_SizeDelta: {x: 761.1936, y: 934.7471}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4826411184823354324
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6353648849088447784}
+  m_CullTransparentMesh: 1
+--- !u!114 &4522167470568155432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6353648849088447784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
