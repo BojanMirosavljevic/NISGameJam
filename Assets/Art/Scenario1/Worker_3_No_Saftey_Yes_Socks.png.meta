@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1352105a212bd4a2cabc5c19ce425dc4
+guid: ba22b5106161e4f5cacaec64b7c396de
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8006958544109390896
-    second: Notebook_0
+      213: -4137525350699342303
+    second: Worker_3_No_Saftey_Yes_Socks_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Notebook_0
+      name: Worker_3_No_Saftey_Yes_Socks_0
       rect:
         serializedVersion: 2
-        x: 387
-        y: 229
-        width: 1225
-        height: 1542
+        x: 493
+        y: 10
+        width: 293
+        height: 701
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0d3b41770a191e090800000000000000
-      internalID: -8006958544109390896
+      spriteID: 12664667d9e8496c0800000000000000
+      internalID: -4137525350699342303
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Notebook_0: -8006958544109390896
+      Worker_3_No_Saftey_Yes_Socks_0: -4137525350699342303
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

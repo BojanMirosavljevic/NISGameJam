@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1352105a212bd4a2cabc5c19ce425dc4
+guid: 85595a18a2b7d4fb89e810a3dece4db3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8006958544109390896
-    second: Notebook_0
+      213: 1559301567599477523
+    second: Scenario1-edukacija_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Notebook_0
+      name: Scenario1-edukacija_0
       rect:
         serializedVersion: 2
-        x: 387
-        y: 229
-        width: 1225
-        height: 1542
+        x: 669
+        y: 182
+        width: 632
+        height: 680
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0d3b41770a191e090800000000000000
-      internalID: -8006958544109390896
+      spriteID: 3130a72a380c3a510800000000000000
+      internalID: 1559301567599477523
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Notebook_0: -8006958544109390896
+      Scenario1-edukacija_0: 1559301567599477523
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

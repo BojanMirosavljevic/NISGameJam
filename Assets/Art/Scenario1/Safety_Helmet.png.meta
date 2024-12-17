@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1352105a212bd4a2cabc5c19ce425dc4
+guid: 6bec4c00178464dfea3d188078ad74cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8006958544109390896
-    second: Notebook_0
+      213: -2171208392732287028
+    second: Safety_Helmet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Notebook_0
+      name: Safety_Helmet_0
       rect:
         serializedVersion: 2
-        x: 387
-        y: 229
-        width: 1225
-        height: 1542
+        x: 28
+        y: 16
+        width: 1944
+        height: 1137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0d3b41770a191e090800000000000000
-      internalID: -8006958544109390896
+      spriteID: ccf58d968715ed1e0800000000000000
+      internalID: -2171208392732287028
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Notebook_0: -8006958544109390896
+      Safety_Helmet_0: -2171208392732287028
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
