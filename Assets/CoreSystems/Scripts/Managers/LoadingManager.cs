@@ -25,13 +25,15 @@ public class LoadingManager : StaticInstance<LoadingManager>
     {
         Levels[0].onClick.AddListener(() =>
         {
-            SceneSystem.Instance.LoadScene(
-                Scene.Game,
-                () =>
-                {
-                    Debug.LogError("Level 0 Loaded");
-                }
-            );
+            GameSystem.Instance.LoadLevel(0);
+        });
+        Levels[1].onClick.AddListener(() =>
+        {
+            GameSystem.Instance.LoadLevel(1);
+        });
+        Levels[2].onClick.AddListener(() =>
+        {
+            GameSystem.Instance.LoadLevel(2);
         });
     }
 }

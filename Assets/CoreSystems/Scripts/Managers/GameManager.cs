@@ -42,7 +42,7 @@ public class GameManager : StaticInstance<GameManager>
             OptionsMenuObject.SetActive(false);
         });
         
-        GameSystem.Instance.Level = 1;
+        // GameSystem.Instance.Level = 0;
 
         switch(GameSystem.Instance.Level)
         {
@@ -74,8 +74,7 @@ public class GameManager : StaticInstance<GameManager>
     {
         if (stagesCounter >= stagesTotal)
         {
-            //passed level!
-            Debug.LogError("All stages passed for level: " + level);
+            SceneSystem.Instance.LoadScene(Scene.Loading);
         }
         else
         {
