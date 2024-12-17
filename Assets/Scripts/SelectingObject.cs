@@ -36,6 +36,7 @@ public class SelectingObject : StageObject
         Clickables[0].onClick.AddListener(() => {
             QuizObject qo = Instantiate(QuizQuestions[0], QuizHolder);
             qo.Parent = this;
+            qo.onClose = CheckEndStage;
             if(qo.Mandatory)
             {
                 SelectableMandatoryCounter++;
@@ -43,13 +44,12 @@ public class SelectingObject : StageObject
             FinishedClickables.Add(0);
             Clickables[0].image.color = new Color(0.7f,0.5f,0.3f,0.5f);
             Clickables[0].interactable = false;
-
-            CheckEndStage();
         });
 
         Clickables[1].onClick.AddListener(() => {
             QuizObject qo = Instantiate(QuizQuestions[1], QuizHolder);
             qo.Parent = this;
+            qo.onClose = CheckEndStage;
             if(qo.Mandatory)
             {
                 SelectableMandatoryCounter++;
@@ -57,13 +57,12 @@ public class SelectingObject : StageObject
             FinishedClickables.Add(1);
             Clickables[1].image.color = new Color(0.7f,0.5f,0.3f,0.5f);
             Clickables[1].interactable = false;
-
-            CheckEndStage();
         });
 
         Clickables[2].onClick.AddListener(() => {
             QuizObject qo = Instantiate(QuizQuestions[2], QuizHolder);
             qo.Parent = this;
+            qo.onClose = CheckEndStage;
             if(qo.Mandatory)
             {
                 SelectableMandatoryCounter++;
@@ -71,8 +70,6 @@ public class SelectingObject : StageObject
             FinishedClickables.Add(2);
             Clickables[2].image.color = new Color(0.7f,0.5f,0.3f,0.5f);
             Clickables[2].interactable = false;
-
-            CheckEndStage();
         });
     }
 
@@ -118,6 +115,8 @@ public class SelectingObject : StageObject
                 FinishedClickables.Add(i);
                 Clickables[i].interactable = false;
                 Clickables[i].image.color = new Color(0.7f,0.5f,0.3f,0.5f);
+
+                qo.onClose = EndStage;
                 break;
             }
         }

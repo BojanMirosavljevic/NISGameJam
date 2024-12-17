@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,6 +24,8 @@ public class QuizObject : MonoBehaviour
     public GameObject IncorrectMessage;
 
     public Button NextButton;
+
+    public Action onClose;
 
     private void Start()
     {
@@ -90,6 +93,7 @@ public class QuizObject : MonoBehaviour
 
     private void CloseQuiz()
     {
+        onClose?.Invoke();
         Destroy(gameObject);
     }
 
