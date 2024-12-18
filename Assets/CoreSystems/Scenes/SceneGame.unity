@@ -1478,6 +1478,14 @@ MonoBehaviour:
   - {fileID: 2857403587940779203, guid: 400a12e33d3f34eeb8af35b253231f7e, type: 3}
   - {fileID: 3480908583778263009, guid: 6551c2628b90c44a78a2ae2f5534951e, type: 3}
   - {fileID: 2857403587940779203, guid: a07b39e815ac24f21ae9839d6393264d, type: 3}
+  StagesScenario2:
+  - {fileID: 6490478292018381899, guid: 484936c43369844fba2e4cc2ea0e2f2a, type: 3}
+  - {fileID: 6490478292018381899, guid: aaf45027f648e454da631f60cf2f3451, type: 3}
+  - {fileID: 6490478292018381899, guid: b2fed73313411484a8e8c86f41af2ff3, type: 3}
+  - {fileID: 6490478292018381899, guid: e431a90f13afb4cc7ab08c0cd82efe20, type: 3}
+  - {fileID: 6490478292018381899, guid: e7cbe39a1821548d7b449f0ae7601a78, type: 3}
+  - {fileID: 6490478292018381899, guid: c4052a49eb9c0444bbe5a75accb78bec, type: 3}
+  - {fileID: 6490478292018381899, guid: 08e41eceb597b4abb9a17ac09bd54738, type: 3}
 --- !u!1 &1148001898
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,8 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,6 +14,7 @@ public class GameManager : StaticInstance<GameManager>
 
     [SerializeField] private List<StageObject> StagesIntro;
     [SerializeField] private List<StageObject> StagesScenario1;
+    [SerializeField] private List<StageObject> StagesScenario2;
 
     private Scene level;
     private int stagesTotal;
@@ -50,7 +47,7 @@ public class GameManager : StaticInstance<GameManager>
             OptionsMenuObject.SetActive(false);
         });
         
-        // GameSystem.Instance.Level = 0;
+        GameSystem.Instance.Level = 2;
 
         switch(GameSystem.Instance.Level)
         {
@@ -62,6 +59,11 @@ public class GameManager : StaticInstance<GameManager>
             case 1:
             {
                 CurrentScenario = StagesScenario1;
+                break;
+            }
+            case 2:
+            {
+                CurrentScenario = StagesScenario2;
                 break;
             }
         }
