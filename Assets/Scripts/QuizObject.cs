@@ -92,7 +92,7 @@ public class QuizObject : MonoBehaviour
 
         if (correct)
         {
-            AudioSystem.Instance.PlayButtonSound();
+            AudioSystem.Instance.PlaySoundSuccess();
         }
         else
         {

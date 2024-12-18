@@ -26,7 +26,7 @@ public class SelectingObject : StageObject
     {
         if (PlaySound == "OdaberiteRadnike")
         {
-            AudioSystem.Instance.PlayButtonOdaberiteRadnike();
+            AudioSystem.Instance.PlaySoundOdaberiteRadnike();
         }
         AudioSystem.Instance.PlayMusicSelecting();
 

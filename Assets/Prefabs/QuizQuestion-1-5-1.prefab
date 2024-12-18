@@ -844,7 +844,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Neta\u010Dan odgovor!\n\nRadniku je potrebna kaciga!"
+  m_text: "Neta\u010Dan odgovor!\n\nJasno je na lokaciji bio postavljen simbol za
+    obavezno no\u0161enje za\u0161titne kacige."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1703,7 +1704,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2618991a4dbd4d61a54523e2dae16a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 0}
   CorrectSelection: 1
   Mandatory: 1
   NoMultipleChoice: 1

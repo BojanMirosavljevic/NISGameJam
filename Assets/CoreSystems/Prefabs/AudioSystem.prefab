@@ -184,8 +184,10 @@ MonoBehaviour:
   SoundButton: {fileID: 8300000, guid: 409ece84f48354345beb4c5a6e8834ee, type: 3}
   SoundSelect: {fileID: 8300000, guid: 98c1b5ea3c19f467193ef668e919e2a2, type: 3}
   SoundWrong: {fileID: 8300000, guid: ce061f4e7421a44edad9394bd51f3c0f, type: 3}
+  SoundSuccess: {fileID: 8300000, guid: 3fda424329df04fc08bdf774c40d0275, type: 3}
   SoundZnakovi: {fileID: 8300000, guid: 127a4aada829c4190af08a999479b359, type: 3}
   SoundOdaberiteRadnike: {fileID: 8300000, guid: 9db90309ca01e45599aa64e3741ac611, type: 3}
+  SoundJaoNoga: {fileID: 8300000, guid: c45edf53dfef6492686e61c4f1e0115f, type: 3}
 --- !u!1 &2080313099172291933
 GameObject:
   m_ObjectHideFlags: 0

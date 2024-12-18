@@ -272,6 +272,7 @@ MonoBehaviour:
   ButtonNotes: {fileID: 1997061609532766039}
   ButtonCloseNotes: {fileID: 463688468582272379}
   StageNotes: {fileID: 5569252962504046798}
+  PlaySound: JaoNoga
 --- !u!1 &2887816289925147839
 GameObject:
   m_ObjectHideFlags: 0

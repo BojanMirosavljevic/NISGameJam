@@ -12,7 +12,7 @@ public class SingleImageObject : StageObject
     {
         if (PlaySound == "Znakovi")
         {
-            AudioSystem.Instance.PlayButtonZnakovi();
+            AudioSystem.Instance.PlaySoundZnakovi();
         }
         AudioSystem.Instance.PlayMusicDialog();
 

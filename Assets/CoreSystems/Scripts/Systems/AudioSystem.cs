@@ -1,10 +1,6 @@
 using System.Collections;
 using UnityEngine;
 
-/// <summary>
-/// Insanely basic audio system which supports 3D sound.
-/// Ensure you change the 'Sounds' audio source to use 3D spatial blend if you intend to use 3D sounds.
-/// </summary>
 public class AudioSystem : PersistentSingleton<AudioSystem>
 {
     [SerializeField] private AudioSource musicSource;
@@ -20,8 +16,10 @@ public class AudioSystem : PersistentSingleton<AudioSystem>
     [SerializeField] private AudioClip SoundButton;
     [SerializeField] private AudioClip SoundSelect;
     [SerializeField] private AudioClip SoundWrong;
+    [SerializeField] private AudioClip SoundSuccess;
     [SerializeField] private AudioClip SoundZnakovi;
     [SerializeField] private AudioClip SoundOdaberiteRadnike;
+    [SerializeField] private AudioClip SoundJaoNoga;
 
     public void PlayMusic(AudioClip clip, float volume = 0.3f, bool shouldLoop = true)
     {
@@ -71,17 +69,25 @@ public class AudioSystem : PersistentSingleton<AudioSystem>
     {
         soundsSource.PlayOneShot(SoundWrong, 1f);
     }
+    public void PlaySoundSuccess()
+    {
+        soundsSource.PlayOneShot(SoundSuccess, 0.8f);
+    }
     public void PlaySceneChangeSound()
     {
         soundsSource.PlayOneShot(SoundChangeScene, 1f);
     }
-    public void PlayButtonZnakovi()
+    public void PlaySoundZnakovi()
     {
         soundsSource.PlayOneShot(SoundZnakovi, 0.9f);
     }
-    public void PlayButtonOdaberiteRadnike()
+    public void PlaySoundOdaberiteRadnike()
     {
         soundsSource.PlayOneShot(SoundOdaberiteRadnike, 0.9f);
+    }
+    public void PlaySoundJaoNoga()
+    {
+        soundsSource.PlayOneShot(SoundJaoNoga, 1f);
     }
 
     public IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)

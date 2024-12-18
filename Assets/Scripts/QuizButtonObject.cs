@@ -28,7 +28,7 @@ public class QuizButtonObject : MonoBehaviour
     {
         if (Selected && correct)
         {
-            Bg.color = Color.green;
+            Bg.color = new Color(0.3170529f, 0.735849f, 0.239498f, 1f);
         }
         else if (Selected && !correct)
         {

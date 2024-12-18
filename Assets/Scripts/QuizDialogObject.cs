@@ -27,6 +27,8 @@ public class QuizDialogObject : StageObject
     [SerializeField] private Button ButtonCloseNotes;
     [SerializeField] private GameObject StageNotes;
 
+    public string PlaySound;
+
     private void ShowNotes()
     {
         StageNotes.SetActive(true);
@@ -36,9 +38,13 @@ public class QuizDialogObject : StageObject
     {
         StageNotes.SetActive(false);
     }
-    
+
     public void Start()
     {
+        if (PlaySound == "JaoNoga")
+        {
+            AudioSystem.Instance.PlaySoundJaoNoga();
+        }
         AudioSystem.Instance.PlayMusicDialog();
         
         ButtonNext.interactable = false;
