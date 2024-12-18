@@ -1130,6 +1130,7 @@ MonoBehaviour:
   - {fileID: 1451530800}
   - {fileID: 351285911}
   - {fileID: 1162621824}
+  LoadingMusic: {fileID: 0}
 --- !u!1 &2080685436
 GameObject:
   m_ObjectHideFlags: 0

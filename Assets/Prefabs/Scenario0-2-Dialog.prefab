@@ -103,15 +103,18 @@ MonoBehaviour:
     Width: 475
   - Direction: 1
     Text: "Na va\u0161em stolu nalaze se fascikle sa slu\u010Dajevima koje su prijavili
-      poslodavci i zaposleni. Svaka fascikla sadr\u017Ei fotografije i izve\u0161taje
+      poslodavci i zaposleni.\\n\\nSvaka fascikla sadr\u017Ei fotografije i izve\u0161taje
       s lica mesta, kao i iskaze svedoka i radnika."
-    Height: 200
+    Height: 225
     Width: 475
   DialogPerson: {fileID: 9164600813886333396}
   MessagesRoot: {fileID: 6776012308037246111}
   ButtonNextStage: {fileID: 1893417758186454168}
   MessageLeft: {fileID: 1693306511680560424, guid: eb6968a8f21e54fa98f9098777425d5d, type: 3}
   MessageRight: {fileID: -8586592463329141313, guid: 2f3f9bf77db18447dadc211210c0078b, type: 3}
+  ButtonNotes: {fileID: 0}
+  ButtonCloseNotes: {fileID: 0}
+  StageNotes: {fileID: 0}
 --- !u!1 &3804582457202680717
 GameObject:
   m_ObjectHideFlags: 0
