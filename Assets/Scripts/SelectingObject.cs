@@ -23,6 +23,8 @@ public class SelectingObject : StageObject
 
     public void Start()
     {
+        AudioSystem.Instance.PlayMusicSelecting();
+
         FinishedClickables = new List<int>();
 
         ButtonNotes.gameObject.SetActive(true);

@@ -25,6 +25,8 @@ public class QuizDialogObject : StageObject
 
     public void Start()
     {
+        AudioSystem.Instance.PlayMusicDialog();
+        
         ButtonNext.interactable = false;
 
         DialogPerson.sprite = DialogPersonSprite;
@@ -33,6 +35,7 @@ public class QuizDialogObject : StageObject
 
         ButtonNext.onClick.AddListener(() =>
         {
+            AudioSystem.Instance.PlayButtonSound();
             QuizObject qo = Instantiate(QuizQuestion, QuizHolder);
             qo.onClose = ExitDialogue;
         });

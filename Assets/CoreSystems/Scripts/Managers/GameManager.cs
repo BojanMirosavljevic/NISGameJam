@@ -29,16 +29,24 @@ public class GameManager : StaticInstance<GameManager>
     {
         OptionsMenuObject.SetActive(false);
 
-        ButtonShowOptions.onClick.AddListener(() => {
+        ButtonShowOptions.onClick.AddListener(() =>
+        {
+            AudioSystem.Instance.PlayButtonSound();
             OptionsMenuObject.SetActive(true);
         });
-        ButtonBackToMenu.onClick.AddListener(() => {
+        ButtonBackToMenu.onClick.AddListener(() =>
+        {
+            AudioSystem.Instance.PlayButtonSound();
             SceneSystem.Instance.LoadScene(Scene.Loading);
         });
-        ButtonRestartLevel.onClick.AddListener(() => {
+        ButtonRestartLevel.onClick.AddListener(() =>
+        {
+            AudioSystem.Instance.PlayButtonSound();
             SceneSystem.Instance.LoadScene(Scene.Game);
         });
-        ButtonContinueLevel.onClick.AddListener(() => {
+        ButtonContinueLevel.onClick.AddListener(() =>
+        {
+            AudioSystem.Instance.PlayButtonSound();
             OptionsMenuObject.SetActive(false);
         });
         

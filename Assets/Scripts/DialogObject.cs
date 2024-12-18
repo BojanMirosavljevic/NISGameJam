@@ -23,13 +23,19 @@ public class DialogObject : StageObject
 
     public void Start()
     {
+        AudioSystem.Instance.PlayMusicDialog();
+
         ButtonNextStage.interactable = false;
-        
+
         DialogPerson.sprite = DialogPersonSprite;
 
         LoadMessages();
 
-        ButtonNextStage.onClick.AddListener(ExitDialogue);
+        ButtonNextStage.onClick.AddListener(() =>
+        {
+            AudioSystem.Instance.PlayButtonSound();
+            ExitDialogue();
+        });
     }
 
     private void LoadMessages()

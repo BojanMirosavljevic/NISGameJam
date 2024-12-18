@@ -10,6 +10,8 @@ public class SingleImageObject : StageObject
 
     public void Start()
     {
+        AudioSystem.Instance.PlayMusicDialog();
+        
         ButtonNextStage.gameObject.SetActive(true);
         ButtonNextStage.interactable = false;
 

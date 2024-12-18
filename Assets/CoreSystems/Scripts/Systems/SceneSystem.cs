@@ -34,6 +34,8 @@ public class SceneSystem : PersistentSingleton<SceneSystem>
     IEnumerator LoadSceneAsync(int sceneIndex, Action callback)
     {
         yield return new WaitUntil(() => isFaded);
+        
+        AudioSystem.Instance.PlaySceneChangeSound();
 
         SceneManager.LoadScene(sceneIndex);
 

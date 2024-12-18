@@ -27,8 +27,16 @@ public class QuizObject : MonoBehaviour
 
     private void Start()
     {
-        Button1.onClick.AddListener(QuizButton1.Toggle);
-        Button2.onClick.AddListener(QuizButton2.Toggle);
+        Button1.onClick.AddListener(() =>
+        {
+            AudioSystem.Instance.PlaySoundSelect();
+            QuizButton1.Toggle();
+        });
+        Button2.onClick.AddListener(() =>
+        {
+            AudioSystem.Instance.PlaySoundSelect();
+            QuizButton2.Toggle();
+        });
 
         ConfirmChoice.onClick.AddListener(Confirm);
     }
@@ -82,6 +90,15 @@ public class QuizObject : MonoBehaviour
             correct = true;
         }
 
+        if (correct)
+        {
+            AudioSystem.Instance.PlayButtonSound();
+        }
+        else
+        {
+            AudioSystem.Instance.PlaySoundWrong();
+        }
+
         CorrectMessage.SetActive(correct);
         IncorrectMessage.SetActive(!correct);
 
@@ -91,6 +108,7 @@ public class QuizObject : MonoBehaviour
 
     private void CloseQuiz()
     {
+        AudioSystem.Instance.PlayButtonSound();
         onClose?.Invoke();
         Destroy(gameObject);
     }
