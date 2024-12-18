@@ -51,7 +51,7 @@ public class AudioSystem : PersistentSingleton<AudioSystem>
     
     public void PlayMusicSelecting()
     {
-        PlayMusic(MusicSelecting, 0.3f, true);
+        PlayMusic(MusicSelecting, 0.25f, true);
     }
 
     public void PlaySound(AudioClip clip, float vol = 0.7f)
@@ -61,11 +61,11 @@ public class AudioSystem : PersistentSingleton<AudioSystem>
 
     public void PlayButtonSound()
     {
-        soundsSource.PlayOneShot(SoundButton, 0.8f);
+        soundsSource.PlayOneShot(SoundButton, 0.6f);
     }
     public void PlaySoundSelect()
     {
-        soundsSource.PlayOneShot(SoundSelect, 0.8f);
+        soundsSource.PlayOneShot(SoundSelect, 0.7f);
     }
     public void PlaySoundWrong()
     {
@@ -73,15 +73,15 @@ public class AudioSystem : PersistentSingleton<AudioSystem>
     }
     public void PlaySceneChangeSound()
     {
-        soundsSource.PlayOneShot(SoundChangeScene, 0.8f);
+        soundsSource.PlayOneShot(SoundChangeScene, 1f);
     }
     public void PlayButtonZnakovi()
     {
-        soundsSource.PlayOneShot(SoundZnakovi, 0.8f);
+        soundsSource.PlayOneShot(SoundZnakovi, 0.9f);
     }
     public void PlayButtonOdaberiteRadnike()
     {
-        soundsSource.PlayOneShot(SoundOdaberiteRadnike, 0.8f);
+        soundsSource.PlayOneShot(SoundOdaberiteRadnike, 0.9f);
     }
 
     public IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)
