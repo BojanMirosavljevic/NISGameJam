@@ -47,8 +47,6 @@ public class GameManager : StaticInstance<GameManager>
             OptionsMenuObject.SetActive(false);
         });
         
-        GameSystem.Instance.Level = 2;
-
         switch(GameSystem.Instance.Level)
         {
             case 0:

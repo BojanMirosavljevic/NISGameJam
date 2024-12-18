@@ -846,8 +846,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Neta\u010Dan odgovor!\n\nBol u o\u010Dima nije razlog da nastavite da
-    radite bez maske. Morate da koristite masku dok radite sa ma\u0161inom, ili jo\u0161
-    bolje - otvorite bolovanje i idite kod lekara da vam pregleda o\u010Di."
+    radite bez za\u0161titnih nao\u010Dara. Morate da ih koristite dok koristite
+    ma\u0161inu, ili jo\u0161 bolje - otvorite bolovanje i idite kod lekara na pregled
+    o\u010Diju."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

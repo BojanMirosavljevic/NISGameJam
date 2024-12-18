@@ -1481,6 +1481,7 @@ MonoBehaviour:
   StagesScenario2:
   - {fileID: 6490478292018381899, guid: 484936c43369844fba2e4cc2ea0e2f2a, type: 3}
   - {fileID: 6490478292018381899, guid: aaf45027f648e454da631f60cf2f3451, type: 3}
+  - {fileID: 6490478292018381899, guid: 1fa588cc9f8df4430b482f538faabd97, type: 3}
   - {fileID: 6490478292018381899, guid: b2fed73313411484a8e8c86f41af2ff3, type: 3}
   - {fileID: 6490478292018381899, guid: e431a90f13afb4cc7ab08c0cd82efe20, type: 3}
   - {fileID: 6490478292018381899, guid: e7cbe39a1821548d7b449f0ae7601a78, type: 3}
