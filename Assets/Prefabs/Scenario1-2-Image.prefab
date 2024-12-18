@@ -166,7 +166,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eeac402bef544c749da4aad81d75e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WaitForNext: 5
   ButtonNextStage: {fileID: 1893417758186454168}
+  PlaySound: Znakovi
 --- !u!1 &3439163366422669747
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,8 +203,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: 0}
-  m_SizeDelta: {x: 400, y: 400}
+  m_AnchoredPosition: {x: 38, y: 0}
+  m_SizeDelta: {x: 496.8653, y: 507.8135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5731031756666485303
 CanvasRenderer:

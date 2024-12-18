@@ -6,12 +6,16 @@ public class SingleImageObject : StageObject
 {
     public int WaitForNext = 5;
     [SerializeField] private Button ButtonNextStage;
-
+    public string PlaySound;
 
     public void Start()
     {
+        if (PlaySound == "Znakovi")
+        {
+            AudioSystem.Instance.PlayButtonZnakovi();
+        }
         AudioSystem.Instance.PlayMusicDialog();
-        
+
         ButtonNextStage.gameObject.SetActive(true);
         ButtonNextStage.interactable = false;
 

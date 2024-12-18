@@ -23,6 +23,20 @@ public class QuizDialogObject : StageObject
     [SerializeField] private MessageObject MessageLeft;
     [SerializeField] private MessageObject MessageRight;
 
+    [SerializeField] private Button ButtonNotes;
+    [SerializeField] private Button ButtonCloseNotes;
+    [SerializeField] private GameObject StageNotes;
+
+    private void ShowNotes()
+    {
+        StageNotes.SetActive(true);
+    }
+
+    private void CloseNotes()
+    {
+        StageNotes.SetActive(false);
+    }
+    
     public void Start()
     {
         AudioSystem.Instance.PlayMusicDialog();
@@ -39,6 +53,10 @@ public class QuizDialogObject : StageObject
             QuizObject qo = Instantiate(QuizQuestion, QuizHolder);
             qo.onClose = ExitDialogue;
         });
+
+        ButtonNotes.gameObject.SetActive(true);
+        ButtonNotes.onClick.AddListener(ShowNotes);
+        ButtonCloseNotes.onClick.AddListener(CloseNotes);
 
         StartCoroutine(EnableNextSoon());
     }

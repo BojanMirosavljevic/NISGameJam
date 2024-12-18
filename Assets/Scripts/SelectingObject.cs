@@ -20,9 +20,14 @@ public class SelectingObject : StageObject
 
     private List<int> FinishedClickables;
 
+    public string PlaySound;
 
     public void Start()
     {
+        if (PlaySound == "OdaberiteRadnike")
+        {
+            AudioSystem.Instance.PlayButtonOdaberiteRadnike();
+        }
         AudioSystem.Instance.PlayMusicSelecting();
 
         FinishedClickables = new List<int>();

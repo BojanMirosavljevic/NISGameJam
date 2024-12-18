@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: 0}
-  m_SizeDelta: {x: 350, y: 350}
+  m_AnchoredPosition: {x: 35, y: 0}
+  m_SizeDelta: {x: 420.7129, y: 420.7129}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8140376131943032109
 CanvasRenderer:
@@ -269,6 +269,9 @@ MonoBehaviour:
   QuizHolder: {fileID: 3045356338237155934}
   MessageLeft: {fileID: 1693306511680560424, guid: eb6968a8f21e54fa98f9098777425d5d, type: 3}
   MessageRight: {fileID: -8586592463329141313, guid: 2f3f9bf77db18447dadc211210c0078b, type: 3}
+  ButtonNotes: {fileID: 1997061609532766039}
+  ButtonCloseNotes: {fileID: 463688468582272379}
+  StageNotes: {fileID: 5569252962504046798}
 --- !u!1 &2887816289925147839
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,6 +21,10 @@ public class DialogObject : StageObject
     [SerializeField] private MessageObject MessageLeft;
     [SerializeField] private MessageObject MessageRight;
 
+    [SerializeField] private Button ButtonNotes;
+    [SerializeField] private Button ButtonCloseNotes;
+    [SerializeField] private GameObject StageNotes;
+
     public void Start()
     {
         AudioSystem.Instance.PlayMusicDialog();
@@ -36,6 +40,14 @@ public class DialogObject : StageObject
             AudioSystem.Instance.PlayButtonSound();
             ExitDialogue();
         });
+
+
+        if (ButtonNotes != null)
+        {
+            ButtonNotes.gameObject.SetActive(true);
+            ButtonNotes.onClick.AddListener(ShowNotes);
+            ButtonCloseNotes.onClick.AddListener(CloseNotes);
+        }
     }
 
     private void LoadMessages()
@@ -64,6 +76,16 @@ public class DialogObject : StageObject
         ButtonNextStage.interactable = true;
     }
 
+    private void ShowNotes()
+    {
+        StageNotes.SetActive(true);
+    }
+
+    private void CloseNotes()
+    {
+        StageNotes.SetActive(false);
+    }
+    
 
     private void ExitDialogue()
     {

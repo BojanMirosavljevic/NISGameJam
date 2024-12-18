@@ -20,6 +20,8 @@ public class AudioSystem : PersistentSingleton<AudioSystem>
     [SerializeField] private AudioClip SoundButton;
     [SerializeField] private AudioClip SoundSelect;
     [SerializeField] private AudioClip SoundWrong;
+    [SerializeField] private AudioClip SoundZnakovi;
+    [SerializeField] private AudioClip SoundOdaberiteRadnike;
 
     public void PlayMusic(AudioClip clip, float volume = 0.3f, bool shouldLoop = true)
     {
@@ -69,10 +71,17 @@ public class AudioSystem : PersistentSingleton<AudioSystem>
     {
         soundsSource.PlayOneShot(SoundWrong, 1f);
     }
-    
     public void PlaySceneChangeSound()
     {
         soundsSource.PlayOneShot(SoundChangeScene, 0.8f);
+    }
+    public void PlayButtonZnakovi()
+    {
+        soundsSource.PlayOneShot(SoundZnakovi, 0.8f);
+    }
+    public void PlayButtonOdaberiteRadnike()
+    {
+        soundsSource.PlayOneShot(SoundOdaberiteRadnike, 0.8f);
     }
 
     public IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)
