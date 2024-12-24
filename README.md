@@ -5,3 +5,5 @@ Notes:
 - I made this public because I wanted to share how I do quick prototyping on tight deadline.
 - I didn't follow DRY and YAGNI in this case, because it slows down prototyping - harder to refactor in case we pivot. And prototypes pivot a lot.
 - Commits are not clean as well. :)
+
+You can try the game at https://bojanmiros.com/nis/ (warning: it's completely in Serbian language)
